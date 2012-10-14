@@ -71,10 +71,12 @@
     </Compile>
     <Compile Include="AdministratorPolicy.cs" />
     <Compile Include="Areas\ExampleArea\Controllers\HomeController.cs" />
+    <Compile Include="Areas\ExampleArea\Controllers\RolesController.cs" />
     <Compile Include="Areas\ExampleArea\ExampleAreaAreaRegistration.cs" />
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Areas\ExampleArea\Controllers\BaseController.cs" />
     <Compile Include="Controllers\ExampleController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Default.aspx.cs">
@@ -102,6 +104,7 @@
     <Content Include="Areas\ExampleArea\Views\Home\PublishersOnly.aspx" />
     <Content Include="Areas\ExampleArea\Views\Home\AdministratorsOnly.aspx" />
     <Content Include="Areas\ExampleArea\Views\Home\Index.aspx" />
+    <Content Include="Areas\ExampleArea\Views\Roles\Index.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Views\Example\DenyAnonymousAccess.aspx" />
@@ -122,7 +125,9 @@
     <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Areas\ExampleArea\Views\Web.config" />
+    <Content Include="Areas\ExampleArea\Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FluentSecurity\FluentSecurity.csproj">
